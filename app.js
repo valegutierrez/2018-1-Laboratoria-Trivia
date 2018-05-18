@@ -1,41 +1,65 @@
 function nameSend() {
     var nameResult = document.getElementById("nameInput").value;
    document.getElementById("nameLabel").innerText = "Bienvenido/a " + nameResult;
-   document.getElementById("nameInput").style.visibility = "hidden";
-   document.getElementById("nameButton").style.visibility = "hidden";
+   document.getElementById("nameInput").style.display = "none";
+   document.getElementById("nameButton").style.display = "none";
+}
+function nextPage() {
+            if (answer1.value == "lima") {
+            document.getElementById("rightAnswersText").innerHTML =
+                document.getElementById("rightAnswersText").innerHTML +
+                "<div class='answer'>" +
+                "<p>La primera sede fue en Lima</p>"
+            "</div>";
+        } else {
+            document.getElementById("wrongAnswersText").innerHTML =
+                document.getElementById("wrongAnswersText").innerHTML +
+                "<div class='answer'>" +
+                "<p>La primera sede fue en Lima</p>"
+            "</div>";
+        }
+        if (answer2.value == "no") {
+            document.getElementById("rightAnswersText").innerHTML =
+                document.getElementById("rightAnswersText").innerHTML +
+                "<div class='answer'>" +
+                "<p>No hay laboratoria en Concepción</p>"
+            "</div>";
+        } else {
+            document.getElementById("wrongAnswersText").innerHTML =
+                document.getElementById("wrongAnswersText").innerHTML +
+                "<div class='answer'>" +
+                "<p>No hay laboratoria en Concepción</p>"
+            "</div>";
+        }
+    document.getElementById("questions2").style.display = "block";
+    document.getElementById("questions1").style.display = "none";
 }
 
-    var wantToPlay = prompt("¿quieres jugar? s/n");
-    if (wantToPlay.toLowerCase() == "s") {
-        var answer1 = prompt("¿han egresado hombres en Laboratoria? s/n");
-        if (answer1.toLowerCase() == "n") {
+function submitAnswers() {
+        if (answer3.value == "talent fest") {
             document.getElementById("rightAnswersText").innerHTML =
                 document.getElementById("rightAnswersText").innerHTML +
                 "<div class='answer'>" +
-                "<p>No han egresado hombres</p>"
+                "<p>La hackaton es el Talent Fest</p>"
             "</div>";
         } else {
             document.getElementById("wrongAnswersText").innerHTML =
                 document.getElementById("wrongAnswersText").innerHTML +
                 "<div class='answer'>" +
-                "<p>No han egresado hombres</p>"
+                "<p>La hackaton es el Talent Fest</p>"
             "</div>";
         }
-
-        var answer2 = prompt("¿hay laboratoria en concepción? s/n");
-        if (answer2.toLowerCase() == "n") {
+        if (answer4.value == "36") {
             document.getElementById("rightAnswersText").innerHTML =
                 document.getElementById("rightAnswersText").innerHTML +
                 "<div class='answer'>" +
-                "<p>No hay laboratoria en concepción</p>"
+                "<p>Las hackatones duran 36hrs</p>"
             "</div>";
         } else {
             document.getElementById("wrongAnswersText").innerHTML =
                 document.getElementById("wrongAnswersText").innerHTML +
                 "<div class='answer'>" +
-                "<p>No hay laboratoria en concepción</p>"
+                "<p>Las hackatones duran 36hrs</p>"
             "</div>";
         }
-    } else {
-        document.getElementById("warningMessage").innerText = "Bueno Chao";
 }

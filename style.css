@@ -2,14 +2,14 @@
     background-color: rgb(136, 218, 210);
     width: 50%;
     float: left;
-    height: 100vh;
+    height: 50vh;
 }
 
 #wrongAnswers {
     background-color: rgb(233, 150, 150);
     width: 50%;
     float: left;
-    height: 100vh;
+    height: 50vh;
 }
 
 .answer {

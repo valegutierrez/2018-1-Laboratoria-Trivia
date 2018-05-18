@@ -13,6 +13,24 @@
         <input type="text" id="nameInput">
         <button id="nameButton" onclick="nameSend()">Enviar</button>
     </div>
+    <div id="questions1"><center>
+        <h2>Categoría 1: Ubicación de Laboratoria</h2>
+        <p>¿Cuál es la primera sede de Laboratoria? (Ciudad)</p>
+        <input type="text" id="answer1">
+        <p>¿Hay Laboratoria en Concepción?</p>
+        <input type="text" id="answer2"><br>
+        <button id="sendAnswers1" onclick="nextPage()">Enviar</button>
+        </center>
+    </div>
+    <div id="questions2" hidden><center>
+        <h2>Categoría 2: Acerca de los eventos</h2>
+        <p>¿Cuál es el nombre de la hackaton que realiza Laboratoria?</p>
+        <input type="text" id="answer3">
+        <p>¿Cuántas horas duran las hackatones?</p>
+        <input type="text" id="answer4"><br>
+        <button id="sendAnswers2" onclick="submitAnswers()">Enviar</button>
+        </center>
+    </div>
     <div id="scoreBoard">
         <div id="rightAnswers">
             <h2>Respuestas correctas</h2>
