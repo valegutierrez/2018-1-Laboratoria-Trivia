@@ -13,5 +13,11 @@
 }
 
 .answer {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: white;
+}
+
+h2 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: white;
 }
